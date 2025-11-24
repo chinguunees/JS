@@ -281,16 +281,98 @@ let loop = 0;
 // for (loop = 0; loop < 100; loop++) {}
 // console.log(loop * niilber, "niilber 100");
 
-let totalSum = 1;
-for (let loop = 1; loop < 126; loop++) {
-  totalSum = totalSum * loop;
-}
-console.log(totalSum, "urjigdsen niilber");
+// let totalSum = 1;
+// for (let loop = 1; loop < 126; loop++) {
+//   totalSum = totalSum * loop;
+// }
+// console.log(totalSum, "urjigdsen niilber");
 
-totalSum = 1;
-for (loop = 1; loop < 126; loop++) {
-  if (loop % 2 !== 0) {
-    totalSum = totalSum * loop;
-  }
+// totalSum = 1;
+// for (loop = 1; loop < 126; loop++) {
+//   if (loop % 2 !== 0) {
+//     totalSum = totalSum * loop;
+//   }
+// }
+// console.log(totalSum, "urjigdsen niilber sondgoi");
+
+//bodlogo1
+
+// let array11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// array11.reverse(1);
+// console.log(array11);
+
+//bodlogo2
+
+// let i = 1;
+// let hurd = 3;
+// for (let i = 1; i < 10; i++) {
+//   console.log("3*", +i, "=", i * hurd);
+// }
+
+//bodlogo3
+
+// let base = 5; // үндсэн тоо
+// let degree = 3; // зэрэг
+// let result = 1; // эхлэх утга үржигдэхдээ 1 байх ёстой
+
+// for (let i = 1; i <= degree; i++) {
+//   result = result * base;
+// }
+
+// console.log(result); // 16
+
+//bodlogo4
+
+// let base1 = 123;
+// let base2 = base1.toString();
+// sum = 0;
+// for (let i = 0; i <= base2.length; i++) {
+//   sum = sum + i;
+// }
+// console.log(sum);
+
+// let number = 234;
+// let sum = 0;
+
+// for (let n = number; n > 0; n = (n - (n % 10)) / 10) {
+//   sum += n % 10;
+// }
+
+// console.log(sum); // 9
+
+//bodlogo5
+
+// let number = 987654;
+
+// FUNCTION <<<<<<<-------------
+
+function chinguunFunction(a, b) {
+  return a + b;
 }
-console.log(totalSum, "urjigdsen niilber sondgoi");
+console.log(chinguunFunction(5, 4));
+const result = chinguunFunction(5, 4);
+result1 = result * 12;
+
+console.log(result1);
+
+function rectangle1(c, d) {
+  const t = c;
+  const y = d;
+  return t * y;
+}
+
+console.log(rectangle1(1, 2));
+
+function add(a, b) {
+  return a + b;
+}
+
+function multiply(n) {
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+console.log("sum: ", multiply(3));
